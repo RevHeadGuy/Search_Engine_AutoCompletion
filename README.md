@@ -1,4 +1,4 @@
-# 🔍 Search Engine Auto-Completion (C++)
+# 🔍 Search Engine Auto-Completion
 
 A **Trie + Heap based Auto-Complete System** that suggests the most relevant search queries based on user input prefixes — just like Google or YouTube search boxes.
 
