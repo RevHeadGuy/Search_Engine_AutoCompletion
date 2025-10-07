@@ -30,5 +30,7 @@ This project demonstrates efficient prefix-based searching using **Data Structur
 ## 📂 Project Structure
 
 📦 SearchEngineAutoComplete
+
 ┣ 📜 autocomplete.cpp # Main source code
+
 ┣ 📜 README.md # Project documentation
