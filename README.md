@@ -34,3 +34,26 @@ This project demonstrates efficient prefix-based searching using **Data Structur
 ┣ 📜 autocomplete.cpp # Main source code
 
 ┣ 📜 README.md # Project documentation
+
+## ⚙️ How It Works
+
+1. **Insertion Phase:**
+2. 
+   Each query (like `"how to make pizza"`) is inserted into the Trie.  
+   - If it already exists, its frequency is incremented.
+   - Otherwise, a new path in the Trie is created.
+
+3. **Search Phase:**
+   
+   When a user types a prefix (e.g., `"how to m"`), the system:
+   - Traverses to the prefix node in the Trie.
+   - Performs a **DFS** from that node to collect all words starting with that prefix.
+   - Pushes all results into a **max-heap** sorted by:
+     - Higher frequency → higher priority  
+     - Same frequency → lexicographically smaller first
+
+4. **Result Phase:**
+   
+   Returns the top-`k` most relevant completions.
+
+---
